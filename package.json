@@ -1,0 +1,25 @@
+{
+  "name": "Phaser-V3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+   "types": "./types/phaser.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src -d build",
+    "start": "node ./src/app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "phaser": "^3.54.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.13.16",
+    "@babel/core": "^7.14.0",
+    "@babel/preset-env": "^7.14.1",
+    "morgan": "^1.10.0"
+  }
+}

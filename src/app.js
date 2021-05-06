@@ -7,8 +7,9 @@ const PORT = process.env.PORT || 3000
 const app = express();
 app.use(morgan('dev'));
 
+//public folder
 app.use(express.static(path.join(__dirname, 'scripts')));
-
+app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', (req, res, next)=>{
     //res.send("hello world");

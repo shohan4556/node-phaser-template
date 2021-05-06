@@ -1,15 +1,17 @@
 "use strict";
 
-const express = require("express");
+var express = require("express");
 
-const path = require('path');
+var path = require('path');
 
-const morgan = require("morgan");
+var morgan = require("morgan");
 
-const PORT = process.env.PORT || 3000;
-const app = express();
-app.use(morgan('dev'));
+var PORT = process.env.PORT || 3000;
+var app = express();
+app.use(morgan('dev')); //public folder
+
 app.use(express.static(path.join(__dirname, 'scripts')));
+app.use(express.static(path.join(__dirname, 'public')));
 app.get('/', (req, res, next) => {
   //res.send("hello world");
   res.sendFile('./index.html', {

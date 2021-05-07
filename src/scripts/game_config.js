@@ -28,9 +28,7 @@ const config = {
   };
   
 
-//Users.log();
-
-export const game = new Phaser.Game(config);
+const game = new Phaser.Game(config);
 
 function preload(){
   

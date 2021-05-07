@@ -1,6 +1,14 @@
+//import Phaser from 'phaser';
+//import imageUrl from '../public/sprites/card_diamonds_K.png'
+
+//import { area } from "../scenes/Game";
+//const test = require('../scenes/Game') 
+
+import { log } from "./test.js";
+
 
 const config = {
-    width: 800,
+    width: 600,
     height: 600,
     type: Phaser.AUTO,
     audio: {
@@ -19,9 +27,16 @@ const config = {
     }
   };
   
-export const  game = new Phaser.Game(config);
+
+//Users.log();
+
+export const game = new Phaser.Game(config);
 
 function preload(){
+  
+  //test import 
+  log();
+
   this.load.image('card', '../sprites/card_diamonds_K.png');
 }
 

@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "babel src -d build",
+    "build": "babel src -d src/build",
     "start": "nodemon ./src/app.js"
   },
   "keywords": [],
